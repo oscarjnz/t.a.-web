@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generación de Código - Portal de Compiladores</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/backg.jpg">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Portal de Compiladores</h1>
+            <nav>
+                <button class="hamburger" aria-label="Alternar menú de navegación">☰</button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="compilers-theory.html">Teoría</a></li>
+                    <li><a href="compiler-structure.html">Estructura</a></li>
+                    <li><a href="code-generation.html" class="active">Generación de Código</a></li>
+                    <li><a href="compilation-phases.html">Fases</a></li>
+                    <li><a href="current-compilers.html">Actuales</a></li>
+                    <li><a href="references.html">Referencias</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Generación de Código</h2>
+            <section>
+                <h3>Código Intermedio</h3>
+                <p>El código intermedio es una representación de bajo nivel del código fuente, independiente de la máquina objetivo. Los formatos incluyen Código de Tres Direcciones (ej., t1 = a + b), Bytecode, SSA y AST Anotado. Ventajas: portabilidad, optimización más sencilla, independencia de la arquitectura.</p>
+                <p>Ejemplo: Código fuente <code>a = b + c * d</code> a Código de Tres Direcciones: <code>t1 = c * d; t2 = b + t1; a = t2</code></p>
+            </section>
+            <section>
+                <h3>Código Final</h3>
+                <p>El código final es la salida ejecutable, como código máquina o ensamblador. El proceso implica selección de instrucciones, asignación de registros y planificación.</p>
+                <p>Ejemplo: Código de Tres Direcciones <code>t1 = a + b</code> a Ensamblador: <code>ADD R1, a, b; MOV t1, R1</code></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Portal de Compiladores. Grupo 4.</p>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="references.html">Referencias</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

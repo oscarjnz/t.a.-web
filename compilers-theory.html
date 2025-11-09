@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoría de Compiladores - Portal de Compiladores</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/backg.jpg">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Portal de Compiladores</h1>
+            <nav>
+                <button class="hamburger" aria-label="Alternar menú de navegación">☰</button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="compilers-theory.html" class="active">Teoría</a></li>
+                    <li><a href="compiler-structure.html">Estructura</a></li>
+                    <li><a href="code-generation.html">Generación de Código</a></li>
+                    <li><a href="compilation-phases.html">Fases</a></li>
+                    <li><a href="current-compilers.html">Actuales</a></li>
+                    <li><a href="references.html">Referencias</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Teoría de Compiladores</h2>
+            <section>
+                <h3>Definición Formal de un Compilador</h3>
+                <p>Un compilador es un programa que traduce código fuente escrito en un lenguaje de programación de alto nivel a código máquina u otro lenguaje de bajo nivel. Realiza análisis léxico, análisis sintáctico, análisis semántico, optimización y generación de código para producir un programa ejecutable.</p>
+            </section>
+            <section>
+                <h3>Autómatas Finitos y Análisis Léxico</h3>
+                <p>Un autómata finito es un modelo matemático utilizado en el análisis léxico para reconocer patrones en cadenas de entrada. Consiste en estados y transiciones, ayudando a tokenizar el código fuente al identificar palabras clave, identificadores y operadores.</p>
+            </section>
+            <section>
+                <h3>Gramáticas Formales y Análisis Sintáctico</h3>
+                <p>La jerarquía de Chomsky clasifica las gramáticas en tipos (0-3). Las gramáticas libres de contexto (Tipo 2) se utilizan en el análisis sintáctico (parsing) para definir la sintaxis de los lenguajes de programación, permitiendo la construcción de árboles de análisis sintáctico o árboles de sintaxis abstracta (ASTs).</p>
+            </section>
+            <section>
+                <h3>Expresiones Regulares en la Tokenización</h3>
+                <p>Las expresiones regulares definen patrones para los tokens. Por ejemplo, la regex [a-zA-Z_][a-zA-Z0-9_]* coincide con identificadores. Se utilizan en los analizadores léxicos para dividir el código fuente en tokens.</p>
+            </section>
+            <section>
+                <h3>Máquinas de Turing y Completitud Computacional</h3>
+                <p>Una máquina de Turing es un modelo teórico de computación que puede simular cualquier algoritmo. Los compiladores aprovechan este concepto para manejar cálculos complejos, asegurando que el código compilado pueda realizar cualquier función computable.</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Portal de Compiladores. Grupo 4.</p>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="references.html">Referencias</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura de un Compilador - Portal de Compiladores</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/backg.jpg">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Portal de Compiladores</h1>
+            <nav>
+                <button class="hamburger" aria-label="Alternar menú de navegación">☰</button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="compilers-theory.html">Teoría</a></li>
+                    <li><a href="compiler-structure.html" class="active">Estructura</a></li>
+                    <li><a href="code-generation.html">Generación de Código</a></li>
+                    <li><a href="compilation-phases.html">Fases</a></li>
+                    <li><a href="current-compilers.html">Actuales</a></li>
+                    <li><a href="references.html">Referencias</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Estructura de un Compilador</h2>
+            <section>
+                <h3>Diagrama Visual de la Estructura del Compilador</h3>
+                    <svg width="700" height="350" viewBox="0 0 700 350">
+                        <!-- Front-end -->
+                        <rect x="50" y="40" width="150" height="60" fill="#e0e0e0" stroke="#000"/>
+                        <text x="125" y="75" text-anchor="middle" font-size="14">Front-end</text>
+                        <!-- Middle-end -->
+                        <rect x="275" y="40" width="150" height="60" fill="#e0e0e0" stroke="#000"/>
+                        <text x="350" y="75" text-anchor="middle" font-size="14">Middle-end</text>
+                        <!-- Back-end -->
+                        <rect x="500" y="40" width="150" height="60" fill="#e0e0e0" stroke="#000"/>
+                        <text x="575" y="75" text-anchor="middle" font-size="14">Back-end</text>
+                        <!-- Flechas entre fases principales -->
+                        <line x1="200" y1="70" x2="275" y2="70" stroke="#000" marker-end="url(#arrow)"/>
+                        <line x1="425" y1="70" x2="500" y2="70" stroke="#000" marker-end="url(#arrow)"/>
+                        <!-- Tabla de Símbolos -->
+                        <rect x="150" y="180" width="150" height="60" fill="#f7f7f7" stroke="#000"/>
+                        <text x="225" y="215" text-anchor="middle" font-size="14">Tabla de Símbolos</text>
+                        <!-- Manejador de Errores -->
+                        <rect x="400" y="180" width="150" height="60" fill="#f7f7f7" stroke="#000"/>
+                        <text x="475" y="215" text-anchor="middle" font-size="14">Manejador de Errores</text>
+                        <!-- Conexiones auxiliares -->
+                        <line x1="125" y1="100" x2="225" y2="180" stroke="#000" marker-end="url(#arrow)"/>
+                        <line x1="350" y1="100" x2="475" y2="180" stroke="#000" marker-end="url(#arrow)"/>
+                        <!-- Definición de la flecha -->
+                        <defs>
+                            <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+                                <path d="M0,0 L12,6 L0,12 Z" fill="#000"/>
+                            </marker>
+                        </defs>
+                    </svg>
+            </section>
+            <section>
+                <h3>Descripción de Componentes</h3>
+                <ul>
+                    <li><strong>Front-end:</strong> Incluye análisis léxico, sintáctico y semántico para analizar y validar el código fuente.</li>
+                    <li><strong>Middle-end:</strong> Realiza optimizaciones independientes de la máquina sobre representaciones intermedias.</li>
+                    <li><strong>Back-end:</strong> Genera código máquina objetivo y aplica optimizaciones dependientes de la máquina.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Portal de Compiladores. Grupo 4.</p>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="references.html">Referencias</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>    

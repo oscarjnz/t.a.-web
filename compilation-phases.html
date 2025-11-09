@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fases de Compilación - Portal de Compiladores</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/backg.jpg">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Portal de Compiladores</h1>
+            <nav>
+                <button class="hamburger" aria-label="Alternar menú de navegación">☰</button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="compilers-theory.html">Teoría</a></li>
+                    <li><a href="compiler-structure.html">Estructura</a></li>
+                    <li><a href="code-generation.html">Generación de Código</a></li>
+                    <li><a href="compilation-phases.html" class="active">Fases</a></li>
+                    <li><a href="current-compilers.html">Actuales</a></li>
+                    <li><a href="references.html">Referencias</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Fases de Compilación</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fase</th>
+                        <th>Entrada</th>
+                        <th>Salida</th>
+                        <th>Detalles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Análisis Léxico</td>
+                        <td>Código fuente</td>
+                        <td>Tokens</td>
+                        <td>Herramientas: Lex, Flex</td>
+                    </tr>
+                    <tr>
+                        <td>Análisis Sintáctico</td>
+                        <td>Tokens</td>
+                        <td>AST</td>
+                        <td>Herramientas: Yacc, Bison</td>
+                    </tr>
+                    <tr>
+                        <td>Análisis Semántico</td>
+                        <td>AST</td>
+                        <td>AST anotado + Tabla de Símbolos</td>
+                        <td>Verificaciones: Tipos, Ámbito, Declaraciones</td>
+                    </tr>
+                    <tr>
+                        <td>Generación de Código Intermedio</td>
+                        <td>AST anotado</td>
+                        <td>IR</td>
+                        <td>Formatos: 3AC, Bytecode</td>
+                    </tr>
+                    <tr>
+                        <td>Optimización</td>
+                        <td>IR</td>
+                        <td>IR optimizado</td>
+                        <td>Técnicas: Plegado de constantes, Eliminación de código muerto, Optimización de bucles</td>
+                    </tr>
+                    <tr>
+                        <td>Generación de Código</td>
+                        <td>IR optimizado</td>
+                        <td>Código máquina</td>
+                        <td>Consideraciones: Arquitectura objetivo, Registros</td>
+                    </tr>
+                    <tr>
+                        <td>Enlazado</td>
+                        <td>Archivos objeto</td>
+                        <td>Ejecutable</td>
+                        <td>Tipos: Estático, Dinámico</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Portal de Compiladores. Grupo 4.</p>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="references.html">Referencias</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
